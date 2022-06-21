@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Q</title>
+    <style>
+        body{background:linear-gradient(to top grey,rgb(82, 18, 18) );
+            background:url("/home/ficx/Desktop/Web\ Design/css/edu4.jpg") 
+            center/cover  fixed no-repeat;
+            box-sizing: border-box;
+            }
+        #sec{border: 1px solid green;
+        color: green;
+        text-transform: capitalize;
+    }
+ @media screen and (min-width: 600px){
+     body{background:url(/home/ficx/Desktop/Web\ Design/css/edu4.jpg);
+background-position: center;
+    background-size: cover;
+background-position: center;
+background-attachment: fixed;}
+
+     #sec{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: bolder;
+    color: rosybrown;}
+     
+ }
+ #buttondiv a{ text-decoration: none;
+text-transform: uppercase;
+color: green;}
+
+
+ #buttondiv button{
+
+border: 2px solid green;
+border-radius: 20px;
+
+
+
+}
+#buttondiv{margin: 50%;
+display: flex;
+justify-content: center;
+}
+#buttondiv:hover{color:red;}
+    </style>
+</head>
+<body>
+    <section id="sec"> let us see how the media query works</section>
+    <div id="buttondiv"><button> <a href="#">welcome</a></button></div>
+</body>
+</html>

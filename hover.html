@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background-color: aliceblue;}
+    .div1{
+        margin:10% 10%;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 5px 5px 40px  wheat;
+    position: relative;
+    display: flex;
+justify-content: center;}
+    img{width: 100%;
+    height: 100%;
+    position: static;
+    z-index: 0;}
+    .div2{margin: auto;
+    position: relative;
+    display: flex;
+justify-content: center;
+    width: 300px;
+    height: 300px;}
+    .div2::before{
+        content: "";
+        position: absolute;
+        border: 2px solid green;
+        top: -40px;
+        left: -40px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transition: all 1.0s linear;
+    }
+    p{text-transform: uppercase;
+    font-weight: bolder;
+font-style: italic;}
+p:hover{text-decoration: underline;
+        color:goldenrod ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        border: 1px solid green;
+        background-color: grey;
+        box-shadow: 5px 5px 20px  wheat;
+        }
+    .div2::after{ content: "";
+        position: absolute;
+        background-color: green;
+        top: -20px;
+        left: -20px;
+        height: 100%;
+        width: 100%;
+    z-index: -2;
+    transition: all 1.0s linear;}
+    .div2:hover::before,
+.div2:hover::after{ top:0;
+left:0;}
+
+
+</style>
+<body>
+    
+    <div  class="div1">
+        <p>hello</p>
+        <div class="div2"> 
+            
+            <img src="/home/ficx/Desktop/Web Design/css/edu4.jpg" alt="Education">
+        </div>
+    </div>
+    
+    
+</body>
+</html>

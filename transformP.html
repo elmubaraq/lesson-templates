@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{ margin: 2%;}
+    /* display: inline-block;} */
+    /* #div parent{ display: inline-block;
+        margin: auto;} */
+    .div1{ width: 200px;
+            height:200px;
+            
+        box-sizing: border-box;
+        border: 2px solid green;
+        position: relative;
+    transform: translateX(50%);
+        }
+
+    .div2{ width: 200px;
+            height:200px;
+            background-color: white;
+        box-sizing: border-box;
+        border: 2px solid yellow;
+        transform: translateY(-10%);
+        position: absolute;
+        z-index: 2;
+    }
+    .div3{ width: 200px;
+            height:200px;
+            background-color: white;
+        box-sizing: border-box;
+        border: 2px solid red;
+        transform: rotateZ(45deg);
+        transform: translateX(20%);
+        transform: rotateZ(45deg);
+        position: absolute;
+        z-index: 1;}
+        .test:hover{ background: rgb(53, 45, 43);
+        transition: all 1.5s;
+        border-radius: 50%;
+        transition-delay: 1.5s;}
+        /* transition-property: background;
+        transition-duration: 5.0s;} */
+
+        .test1:hover{ background: rgb(53, 45, 43);
+        transition: all 1.5s;
+        border-radius: 50%;
+        transition-delay: 1.5s;}
+        .trans{width: 100px;
+                height: 100px;
+                margin: 15px;
+                color: white;
+            background-color: green;
+            transition: all 1.0s ;}
+            .trans:hover{transform: translatex(100px);}
+ 
+.defaut{transition: all 1.0s default ;}
+.ease{transition: all 1.0s ease;}
+.ease-in{transition: all 1.0s ease-in;}
+.ease-in-out{ transition: all 1.0s ease-in-out;}
+.linear{transition: all 1.0s linear;}
+</style>
+<body> <div id></div>
+  <div class="div1"></div>  
+     <div class="div2"></div>
+         <div class="div3"></div>
+         <br><br><br>
+<div>
+  <div class="div1" style="transform: scaleX(1);"></div>  
+     <div class="div2" style="transform: scaleX(1.2);"></div>
+         <div class="div3" style="transform: scaleY(0.5);"></div></div>
+         <br><br><br>
+         <div>
+            <div class="div1" style="transform: skewX(20deg);"></div>  
+               <div class="div2" style="transform: skewY(10deg);"></div>
+                   <div class="div3" style="transform: scaleY(0.5);"></div></div>
+                   <br><br><br>
+                   <br><br><br>
+                   <br><br><br>
+                   <div class="test" style="width: 200px; height: 200px; border: 2px solid pink;"> </div>
+                   <br><br><br>
+                   <br><br><br>
+                   <br><br><br>
+                   <div  class="trans" class="default"> default</div>
+                   <div class="trans" class="ease"> ease</div>
+                   <div class="trans" class="linear">linear</div>
+                   <div class="trans" class="ease-in<"> ease-in</div>
+                   <div class="trans" class="ease-out"> ease-out</div>
+                   <div class="trans" class="ease-in-out"> ease-in-out</div>
+                   
+        </body>
+</html>

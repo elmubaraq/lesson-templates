@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElement</title>
+</head>
+<style>
+    body{background-color: aliceblue;}
+    section{width: 95vw;
+        margin: auto;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 5px 5px 40px  wheat;}
+    section::before{content: "Hi, ";
+    display: block;background-color: green ;
+}
+    section::after{content: "Thank you, ";
+    display: block;
+    background-color: green ;
+ text-align: right;}
+ div{width: 15%;
+border: 2px solid green;
+ margin: auto;
+position: relative;}
+ img{height: 100%;
+    width: 100%;
+display: block;
+z-index: -2;}
+ div::before{ content: "";
+ width: 100%;
+ height: 100%;
+border: 2px solid green;
+position: absolute;
+top: -70px;
+left: -70px;
+transition: all 0.5s linear;
+
+z-index: -3;}
+
+div::after{ content: "";
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+ background-color: black;
+ transition: all 0.5s linear;
+border: 2px solid green;
+top: -40px;
+left: -40px;
+position: absolute;
+z-index: -1;
+box-sizing: border-box;}
+div:hover::before,
+div:hover::after{ top:0;
+left:0;}
+
+</style>
+<body>
+    <section> before and after Pseudo elements 
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Reprehenderit facilis obcaecati rerum. 
+        Ab placeat fugiat ex! Modi minima dicta enim dolore eos 
+        aliquam recusandae non harum at minus, doloribus
+         laudantium assumenda nisi provident inventore aliquid 
+         place
+         at ullam aspernatur labore eligendi illo quas rerum ipsum ipsam.
+          Eum inventore officia rem reprehenderit, expedita quas reiciendis dolor 
+          necessitatibus autem molestias impedit ipsum aliquid maxime! Ab error, 
+          architecto quibusdam nulla ipsa iste quos culpa magnam voluptates provident 
+          neque quam distinctio at omnis sit consequuntur corrupti deserunt repellat
+           esse perferendis. Voluptate, consequuntur nam praesentium officia impedit
+            dolorem vitae recusandae esse assumenda hic fugiat laudantium, blanditii
+            s eum quo? Labore recusandae alias adipisci beatae mollitia facilis illum! 
+            Quae voluptatem consequatur accusamus cum repudiandae dolorem, doloremque 
+            similique voluptas ea omnis, ex accusantium quod ad est cumque ut tempore 
+            suscipit fuga? Iusto magni nihil voluptatum aliquid, libero nemo rerum harum
+             unde illum. Dolore optio ut magnam nesciunt blanditiis, molestias similique 
+             tempore adipisci inventore alias aliquam non in, enim qui voluptate ipsa 
+             praesentium dolorum nisi. Aperiam, voluptatem impedit aspernatur asperiores
+              nostrum tenetur aliquid quasi perspiciatis aliquam architecto laboriosam optio 
+              ullam amet ratione fugiat reprehenderit sapiente saepe distinctio sed corporis 
+              quis modi sunt voluptas. Corporis eaque illo consequuntur itaque vel perspiciatis 
+              velit, quae nisi obcaecati doloremque laboriosam perferendis eos voluptas. 
+              Ratione obcaecati pariatur, officiis expedita dicta ullam. Doloribus non perspiciatis
+               sapiente aspernatur iste quas voluptatem, laudantium accusamus necessitatibus repudiandae 
+               recusandae odit cumque dolorum beatae nobis nisi, expedita sed modi. Eligendi 
+               corrupti similique, odio dolore asperiores voluptas animi maxime error 
+               voluptates adipisci quia impedit tenetur cumque repellat quod, 
+               ut quaerat ipsum numquam possimus eius consectetur vitae ad? Voluptatum odio,
+                reprehenderit quo quidem accusantium magni dolorum mollitia, 
+                enim distinctio sunt temporibus molestiae dolores dolorem officiis 
+                harum nesciunt quod, eius vel molestias qui? Voluptatibus, dignissimos 
+                officia quisquam fugit amet vel aliquam officiis in doloribus repudiandae 
+                sed rerum natus similique ipsum veritatis ut accusantium enim quas est id 
+                animi minima. Tempora provident dolores, exercitationem quos expedita fugit, 
+                repellat, consectetur molestiae eius doloribus quod. Iste explicabo deserunt 
+                soluta vitae odio, natus odit asperiores! Nobis veniam, omnis, suscipit 
+                voluptates commodi ut dignissimos accusamus dolore explicabo culpa quidem in?
+                 Quidem voluptatum aperiam cum asperiores quo? At voluptatum, accusamus minima 
+                 veritatis dolores neque tenetur a impedit rerum repellendus dolore sequi eum,
+                  exercitationem libero ex. Asperiores voluptas fugiat repellendus quibusdam!
+                   Quasi praesentium quod facere explicabo modi reprehenderit aspernatur eos 
+                   molestiae nihil impedit reiciendis quibusdam odit perferendis illum quis
+                unde hic quisquam ducimus dolorem, corporis laudantium beatae doloremque maiores
+                 nobis. Consequatur atque ex quisquam adipisci velit a exercitationem, veniam 
+                 iusto assumenda quia iste nulla modi, aut odio temporibus excepturi ab quidem
+                  animi quis non soluta. Illo, repellat possimus numquam maxime recusandae 
+                  voluptas ullam nulla molestiae similique reiciendis magnam beatae tenetur qui 
+                  obcaecati aperiam natus unde. Aliquam mollitia iure aperiam vero eos quibusdam,
+                   amet voluptatum facilis temporibus voluptas inventore quae quaerat? Molestiae,
+                    excepturi corrupti. Eum enim, delectus adipisci suscipit praesentium voluptas 
+                    nemo error aliquid quia excepturi maiores eius aperiam sed numquam sequi.
+                    Corrupti nemo at vitae optio repellat excepturi porro obcaecati doloribus.
+
+
+                </section> <br> <br><br><br><br><div>
+    <img src="/home/ficx/Desktop/Web Design/css/edu4.jpg" alt="education"> </div>
+    <br>
+    
+   
+</body>
+</html>
